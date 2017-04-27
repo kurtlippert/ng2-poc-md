@@ -9,7 +9,8 @@
     "test": "ng test --watch=false",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "tape": "env-cmd ./.env ts-node node_modules/tape/bin/tape src/libs/*.spec.ts | tap-spec"
+    "tape": "env-cmd ./.env ts-node node_modules/tape/bin/tape src/libs/*.spec.ts | tap-spec",
+    "ts": "ts-node"
   },
   "private": true,
   "dependencies": {
@@ -18,14 +19,15 @@
     "@angular/core": "^4.0.0",
     "@angular/forms": "^4.0.0",
     "@angular/http": "^4.0.0",
+    "@angular/material": "^2.0.0-beta.3",
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
     "core-js": "^2.4.1",
-    "folktale": "^2.0.0-alpha4",
     "intl": "^1.2.5",
     "rxjs": "^5.1.0",
     "tape": "^4.6.3",
+    "typestyle": "^1.3.2",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
@@ -46,7 +48,6 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-tap": "^3.1.1",
-    "object.entries": "^1.0.4",
     "phantomjs-polyfill-object-assign": "0.0.2",
     "protractor": "~5.1.0",
     "tap-spec": "^4.1.1",

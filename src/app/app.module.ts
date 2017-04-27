@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http'
 
 import { AppComponent } from './app.component'
 import { SideNavComponent } from '../sidenav'
+import { HeaderComponent } from '../header'
 
 @NgModule({
   declarations: [
     AppComponent,
-    SideNavComponent
+    SideNavComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
